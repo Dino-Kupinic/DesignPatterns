@@ -5,7 +5,7 @@ public class ZooKeeper {
   private int animalCount;
 
   private ZooKeeper() {
-    animalCount = 0;
+    this.animalCount = 0;
   }
 
   public static synchronized ZooKeeper getInstance() {
@@ -16,7 +16,7 @@ public class ZooKeeper {
   }
 
   public void addAnimal() {
-    animalCount++;
+    this.animalCount++;
     System.out.println("Animal added. Total count: " + animalCount);
   }
 
